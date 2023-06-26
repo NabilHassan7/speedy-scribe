@@ -19,7 +19,7 @@ body {
 
 /* styling for the question display box */
 #question {
-    height: 100px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,12 +33,12 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%
     );
     backdrop-filter: blur(5px);
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 /* styling for the typing display box */
 #display {
-    height: 100px;
+    height: 175px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -49,6 +49,7 @@ body {
     border: 2px solid #9dffad;
     border-radius: 15px;
     font-family: 'Special Elite', cursive;
+    margin: 30px;
 }
 
 /* countdown timer */
