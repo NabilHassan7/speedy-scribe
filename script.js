@@ -14,10 +14,9 @@ let questionText = "";
 
 // function to display questions from the json data file
 const displayQuestion = () => {
-  fetch("./texts.json")
+  fetch("./data/texts.json")
     .then((res) => res.json())
     .then((data) => {
-      console.log(Math.floor(Math.random() * data.length));
       questionText = data[Math.floor(Math.random() * data.length)];
       question.innerHTML = questionText;
     });
