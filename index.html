@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speedy Scribe</title>
+
+    <!-- importing CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- importing Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Zilla Slab -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Special Elite -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- title of the website -->
+    <h1 class="title"><img src="./assets/logo.png" /></h1>
+    <div id="show-time">0 seconds</div>
+
+    <!-- box container for the typing test -->
+    <div class="box-container">
+      <!-- container to load the question from data -->
+        <div id="question"></div>
+
+      <!-- container to show the letters typed -->
+        <div id="display" class="inactive"></div>
+
+      <!-- start button -->
+        <div class="buttons">
+            <button id="starts">Press START to begin</button>
+        </div>
+
+      <!-- history display section -->
+        <div class="divider-container">
+            <div class="line"></div>
+                <h1 class="title2">History</h1>
+                <div class="line"></div>
+            </div>
+        <div id="histories"></div>
+    </div>
+
+    <!-- funtion call to JS functions -->
+    <div id="countdown"></div>
+    <div id="modal-background" class="hidden"></div>
+    <div id="result" class="hidden"></div>
+
+    <!-- importing the JS files -->
+    <script src="./script.js"></script>
+    <script src="./history.js"></script>
+</body>
+</html>
